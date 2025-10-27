@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Privacy Policy - [Croom X]</title>
+    <title>Privacy Policy - Croom X</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         * {
             margin: 0;
@@ -32,6 +33,11 @@
             border-radius: 0 0 20px 20px;
             box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
             margin-bottom: 30px;
+        }
+        
+        .logo {
+            font-size: 3rem;
+            margin-bottom: 15px;
         }
         
         header h1 {
@@ -99,6 +105,15 @@
             border-radius: 0 8px 8px 0;
         }
         
+        .reward-box {
+            background: linear-gradient(135deg, #fff9e6 0%, #fff0cc 100%);
+            padding: 25px;
+            border-left: 4px solid #ffc107;
+            margin: 25px 0;
+            border-radius: 0 8px 8px 0;
+            border: 1px solid #ffe699;
+        }
+        
         .contact-section {
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             color: white;
@@ -157,6 +172,59 @@
             margin: 20px 0;
         }
         
+        .reward-icon {
+            font-size: 1.5rem;
+            margin-right: 10px;
+            vertical-align: middle;
+        }
+        
+        .app-features {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin: 30px 0;
+        }
+        
+        .feature {
+            flex: 0 0 48%;
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            text-align: center;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+        }
+        
+        .feature i {
+            font-size: 2.5rem;
+            color: #11998e;
+            margin-bottom: 15px;
+        }
+        
+        .feature h3 {
+            margin-bottom: 10px;
+            color: #2c3e50;
+        }
+        
+        .nav-links {
+            display: flex;
+            justify-content: center;
+            margin: 20px 0;
+        }
+        
+        .nav-link {
+            margin: 0 15px;
+            color: #11998e;
+            text-decoration: none;
+            font-weight: 500;
+            transition: all 0.3s;
+        }
+        
+        .nav-link:hover {
+            color: #0d7a6b;
+            text-decoration: underline;
+        }
+        
         @media (max-width: 768px) {
             header h1 {
                 font-size: 2rem;
@@ -165,18 +233,35 @@
             .content-card {
                 padding: 20px;
             }
+            
+            .feature {
+                flex: 0 0 100%;
+            }
+            
+            .nav-links {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .nav-link {
+                margin: 5px 0;
+            }
         }
     </style>
 </head>
 <body>
     <header>
         <div class="container">
+            <div class="logo">
+                <i class="fas fa-gamepad"></i>
+            </div>
             <h1>Privacy Policy</h1>
-            <p>Your privacy is important to us</p>
+            <p>Croom X - Your Gaming Destination</p>
         </div>
     </header>
     
-    <div class="container">
+   
+        
         <div class="last-updated">
             <strong>Last updated:</strong> October 2025
         </div>
@@ -186,8 +271,34 @@
                 <strong>📝 Note:</strong> This Privacy Policy explains how we collect, use, and protect your information when you use our mobile application.
             </div>
             
+            <h2>About Croom X</h2>
+            <p>Croom Studio manages the Croom X gaming app as a free service for users. This SERVICE is provided by Croom Studio at no cost and is intended for use as is.</p>
+            
+            <div class="app-features">
+                <div class="feature">
+                    <i class="fas fa-tic-tac-toe"></i>
+                    <h3>Tic Tac Toe</h3>
+                    <p>Play online with friends or offline against AI</p>
+                </div>
+                <div class="feature">
+                    <i class="fas fa-th"></i>
+                    <h3>2048 Puzzle</h3>
+                    <p>Challenge your mind with this addictive number game</p>
+                </div>
+                <div class="feature">
+                    <i class="fas fa-trophy"></i>
+                    <h3>Leaderboard</h3>
+                    <p>Compete with players worldwide</p>
+                </div>
+                <div class="feature">
+                    <i class="fas fa-gift"></i>
+                    <h3>Reward System</h3>
+                    <p>Complete tasks and earn points</p>
+                </div>
+            </div>
+            
             <h2>1. Information We Collect</h2>
-            <p> Croom Studio Manage the Croom X gaming app as a Free App Use Tom users. This SERVICE Provided by Croom Studio </p></p>
+            <p>We collect the following data when you use our app:</p>
             
             <h3>a. Personal Information from Google Sign-In</h3>
             <ul>
@@ -210,7 +321,7 @@
             <ul>
                 <li>Device information (model, OS version, unique device identifiers)</li>
                 <li>App performance data and crash logs</li>
-               
+                <li>Ad interaction details (impressions, clicks, conversions)</li>
             </ul>
             
             <div class="warning-box">
@@ -246,7 +357,7 @@
                     <a href="https://firebase.google.com/support/privacy" target="_blank">Firebase Privacy Policy</a>
                 </li>
                 <li><strong>Google AdMob</strong> - Advertisement services<br>
-                    <a href="https://policies.google.com/privacy" target="_blank">Admob Privacy Policy</a>
+                    <a href="https://policies.google.com/privacy" target="_blank">AdMob Privacy Policy</a>
                 </li>
             </ul>
             
@@ -268,36 +379,42 @@
                 <li>Access your personal data</li>
                 <li>Correct inaccurate data</li>
                 <li>Request deletion of your account and data</li>
-                
             </ul>
             
-           
             <h2>9. Changes to This Policy</h2>
             <p>We may update this Privacy Policy. Continued use of the app after changes constitutes acceptance of the updated policy.</p>
+            
+            <h2>10. Rewards and Payments</h2>
+            <div class="reward-box">
+                <p><span class="reward-icon">🏆</span><strong>Reward Information</strong></p>
+                <p>We do not collect any payment or fee from users for participation in our app. The app is completely free to use.</p>
+                
+                <p>Users who achieve a top 3 position on the leaderboard, based on their skill performance, are eligible to receive a cash reward of ₹1000. All rewards are provided externally (such as Paytm/UPI transfer), and no payment gateway is integrated within the app.</p>
+                
+                <p>Eligibility, selection process, and reward distribution are managed transparently and do not require users to make any purchase. User data, if collected, is only used for displaying leaderboard scores and communicating with winners. No sensitive personal or financial information is required, collected, or shared.</p>
+                
+                <p>By using the app, you agree to these terms and acknowledge that all prize payouts are based purely on skill ranking and are processed externally.</p>
+            </div>
             
             <div class="contact-section">
                 <h2>11. Contact Us</h2>
                 <p>If you have any questions about this Privacy Policy or your data:</p>
-                <a href="mailto:support@yourapp.com" class="contact-email">📧 support@yourapp.com</a>
+                <a href="mailto:support@croomx.com" class="contact-email">📧 support@croomx.com</a>
             </div>
             
-           
+            <div style="text-align: center; margin-top: 30px;">
+                <a href="terms-and-conditions.html" class="terms-button">View Terms and Conditions</a>
+            </div>
         </div>
         
         <footer>
-            <p>&copy; 2025 [Croom X]. All rights reserved.</p>
+            <p>&copy; 2025 Croom X. All rights reserved. | Croom Studio</p>
         </footer>
     </div>
 
     <script>
         // Update year in footer
-        document.querySelector('footer p').innerHTML = `&copy; ${new Date().getFullYear()} [Croom X]. All rights reserved.`;
-        
-        // Terms and Conditions button handler
-        document.querySelector('.terms-button').addEventListener('click', function(e) {
-            e.preventDefault();
-            alert('This would navigate to your Terms and Conditions page in a real implementation.');
-        });
+        document.querySelector('footer p').innerHTML = `&copy; ${new Date().getFullYear()} Croom X. All rights reserved. | Croom Studio`;
     </script>
 </body>
 </html>
